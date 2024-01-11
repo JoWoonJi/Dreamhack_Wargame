@@ -12,7 +12,7 @@ ida 에서 패치 하는법.
 - **실행 (F9)**: 바이너리를 실행합니다. 이 때 실행 도중 중단점을 만나면 멈추게 됩니다.
 - **Edit - Patch Program**: 바이너리 패치와 관련된 메뉴가 존재합니다.
 
-![patch.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/38552da6-340d-42c1-a9a1-b181ff331f03/2d32e943-0164-4759-b1fa-7bbcc5398fbd/patch.jpg)
+![patch.jpg](https://github.com/JoWoonJi/Dreamhack_Wargame/blob/main/Reverse_Engineering/patch.jpg)
 
 플래그 부분이 마스킹. 프로그램 내에 마스킹하는부분을 찾을 수 있다. 한줄씩 선을 그리는. 
 
