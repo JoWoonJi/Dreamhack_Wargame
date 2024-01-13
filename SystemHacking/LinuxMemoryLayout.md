@@ -29,7 +29,7 @@
 
 # **데이터 세그먼트**
 
-!(https://dreamhack-lecture.s3.amazonaws.com/media/c467d7ba16f62229b11749ab360e6ca803df4af664e16eba206b2803672cd790.png)
+![](https://dreamhack-lecture.s3.amazonaws.com/media/c467d7ba16f62229b11749ab360e6ca803df4af664e16eba206b2803672cd790.png)
 
 **데이터 세그먼트(Data Segment)**에는 컴파일 시점에 값이 정해진 전역 변수 및 전역 상수들이 위치합니다. CPU가 이 세그먼트의 데이터를 읽을 수 있어야 하므로, 읽기 권한 이 부여됩니다.
 
@@ -49,7 +49,7 @@
 
 # **BSS 세그먼트**
 
-!https://dreamhack-lecture.s3.amazonaws.com/media/723d9d477ce69171e3c189ac6d09ad461f4f2094148e08228534f6a09cf242b4.png
+![](https://dreamhack-lecture.s3.amazonaws.com/media/723d9d477ce69171e3c189ac6d09ad461f4f2094148e08228534f6a09cf242b4.png)
 
 **BSS 세그먼트(BSS Segment, Block Started By Symbol Segment)**는 컴파일 시점에 값이 정해지지 않은 전역 변수가 위치하는 메모리 영역입니다. 여기에는 개발자가 선언만 하고 초기화하지 않은 전역변수 등이 포함됩니다. 이 세그먼트의 메모리 영역은 프로그램이 시작될 때, 모두 0으로 값이 초기화됩니다. 이런 특성 때문에 C 코드를 작성할 때, 초기화되지 않은 전역 변수의 값은 0이됩니다.
 
@@ -67,7 +67,7 @@
 
 # **스택 세그먼트**
 
-!https://dreamhack-lecture.s3.amazonaws.com/media/aff95bc463854b0170c77c8208ae9ddf913b617b2c7290a414f1f1220071fb65.png
+![](https://dreamhack-lecture.s3.amazonaws.com/media/aff95bc463854b0170c77c8208ae9ddf913b617b2c7290a414f1f1220071fb65.png)
 
 **스택 세그먼트(Stack Segment)**는 프로세스의 스택이 위치하는 영역입니다. 함수의 인자나 지역 변수와 같은 임시 변수들이 실행중에 여기에 저장됩니다.
 
@@ -97,7 +97,7 @@
 
 # **힙 세그먼트**
 
-!https://dreamhack-lecture.s3.amazonaws.com/media/9870b37aa3fd663dfe72518a40445bf255baf03ca77c383a97fdf249ccb9d7b4.png
+![](https://dreamhack-lecture.s3.amazonaws.com/media/9870b37aa3fd663dfe72518a40445bf255baf03ca77c383a97fdf249ccb9d7b4.png)
 
 **힙 세그먼트(Heap Segment)**는 힙 데이터가 위치하는 세그먼트입니다. 스택과 마찬가지로 실행중에 동적으로 할당될 수 있으며, 리눅스에서는 스택 세그먼트와 반대 방향으로 자랍니다.
 
