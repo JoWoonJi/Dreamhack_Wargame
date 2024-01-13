@@ -16,7 +16,7 @@
 
 # **코드 세그먼트**
 
-!https://dreamhack-lecture.s3.amazonaws.com/media/5204ca2cd71ee11825d8bb97d0e2920e0d0dcf777fef27822d4b087d9fea035a.png
+![](https://dreamhack-lecture.s3.amazonaws.com/media/5204ca2cd71ee11825d8bb97d0e2920e0d0dcf777fef27822d4b087d9fea035a.png)
 
 **코드 세그먼트(Code Segment)**는 실행 가능한 기계 코드가 위치하는 영역으로 **텍스트 세그먼트(Text Segment)**라고도 불립니다.
 
@@ -29,7 +29,7 @@
 
 # **데이터 세그먼트**
 
-!https://dreamhack-lecture.s3.amazonaws.com/media/c467d7ba16f62229b11749ab360e6ca803df4af664e16eba206b2803672cd790.png
+!(https://dreamhack-lecture.s3.amazonaws.com/media/c467d7ba16f62229b11749ab360e6ca803df4af664e16eba206b2803672cd790.png)
 
 **데이터 세그먼트(Data Segment)**에는 컴파일 시점에 값이 정해진 전역 변수 및 전역 상수들이 위치합니다. CPU가 이 세그먼트의 데이터를 읽을 수 있어야 하므로, 읽기 권한 이 부여됩니다.
 
