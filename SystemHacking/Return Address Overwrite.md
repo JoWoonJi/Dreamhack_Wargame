@@ -18,7 +18,7 @@
 
 $ ulimit -c unlimited
 
-![ReturnAddressOverwrite.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/38552da6-340d-42c1-a9a1-b181ff331f03/e333012a-3c22-474e-a822-92f029fda8db/ReturnAddressOverwrite.jpg)
+![ReturnAddressOverwrite.jpg](https://github.com/JoWoonJi/Dreamhack_Wargame/blob/main/SystemHacking/img/ReturnAddressOverwrite.jpg)
 
 핵심은 페이로드에 A(더미값) * 56 (10진수는56, 16진수 0x38) 만큼 채워주고 그 뒤에 get shell의 주소 값을 넣어주는 것이다.  (버퍼 오버플로우)
 
@@ -26,7 +26,7 @@ shell의 주소 반환값은 리틀엔디언으로. 리틀엔디언은 역순이
 
 그래서 원래의 쉘주소는 0x (00 00 00 00 00 40 06 aa) 였던것.
 
-쉘주소는 pwndbg로. print get_shell
+쉘주소는 gdb pwndbg로. print get_shell
 
 파이썬 코드를 실행 하면 쉘을 획득하게 되고 ls 명령어로 파일명을 알아내고 flag를 cat으로 읽으면 된다. 
 
