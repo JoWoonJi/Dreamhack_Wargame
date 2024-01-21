@@ -46,7 +46,7 @@ exploit
 
 ```
 
-![rop.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/38552da6-340d-42c1-a9a1-b181ff331f03/960d973f-6219-4982-a2f8-dca279417455/rop.jpg)
+![rop.jpg](https://github.com/JoWoonJi/Dreamhack_Wargame/blob/main/SystemHacking/img/rop.jpg)
 
 워게임환경과 vm의 환경이 맞지가 않아서 한 10번 시도한 끝에 겨우 성공.
 
