@@ -94,6 +94,6 @@ ifconfig;/bin/sh
 [dummy] *32 + "ifconfig;/bin/sh"
 ```
 
-![cmd_center.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/a4983dbd-4924-435d-b0f1-3ca8d60a02fa/812fc3e4-8346-4997-ba32-65d086aadafc/cmd_center.jpg)
+![cmd_center.jpg](https://github.com/JoWoonJi/Dreamhack_Wargame/blob/main/SystemHacking/img/cmd_center.jpg)
 
 플래그 획득
